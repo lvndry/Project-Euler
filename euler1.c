@@ -10,7 +10,9 @@
 	The first algorith takes 23ms to run and the second one 10ms so more than half less.
 	
 	The perfomance difference is due to branch prediction optimisation in the second program.
-	I let you read more about the subject here : https://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array
+	I let you read more about the subject here : 
+		https://en.wikipedia.org/wiki/Branch_predictor
+		https://stackoverflow.com/questions/11227809/why-is-it-faster-to-process-a-sorted-array-than-an-unsorted-array
 */
 
 #include <stdio.h>
