@@ -1,14 +1,17 @@
  /*
 	Landry Monga
+	October 2017
 
 	Project Euler 2
-
+	Solution : 4613732
+	
+	Comment:	
 	Here I sum all the even numbers of the Fibonacci sequence (below 4000000)
  */
 
 #include <stdio.h>
 
-#define MAX 4000000
+#define LIMIT 4000000
 
 int main(int argc, char const *argv[])
 {
@@ -21,7 +24,7 @@ int main(int argc, char const *argv[])
 
 	sum = fibonacci[1];
 
-	while(fibonacci[2] < MAX){
+	while(fibonacci[2] < LIMIT){
 		fibonacci[2] = fibonacci[1] + fibonacci[0]; //Iterative fibonnaci sequence
 		fibonacci[0] = fibonacci[1];
 		fibonacci[1] = fibonacci[2];
